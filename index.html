@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uni-Aibot By Vathna</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <!-- Header -->
+    <header class="chat-header">
+      <div class="header-top">
+        <h2 id="app-title">Uni-Aibot By Vathna</h2>
+        <div class="controls">
+          <button id="lang-btn" class="icon-btn">🇰🇭 ភាសាខ្មែរ</button>
+          <button id="share-btn" class="icon-btn">🔗 Share</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Chat Messages Window -->
+    <div class="chat-box" id="chat-box">
+      <div class="message bot-message" id="welcome-msg">
+        Hello! You can talk to me in English or Khmer (ភាសាខ្មែរ). Start chatting below!
+      </div>
+    </div>
+
+    <!-- Input Form -->
+    <form class="input-area" id="chat-form">
+      <input type="text" id="user-input" placeholder="Type a message..." required />
+      <button type="submit" id="send-btn">Send</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
