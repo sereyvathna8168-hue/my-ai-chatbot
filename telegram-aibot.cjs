@@ -1,8 +1,13 @@
-require('dotenv').config();
+try {
+  require('dotenv').config();
+} catch (e) {
+  // dotenv is optional in production environments like Render
+}
+
 const TelegramBot = require('node-telegram-bot-api');
 
 // ==========================================
-// CONFIGURATION (Loaded securely from .env & Render)
+// CONFIGURATION
 // ==========================================
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
